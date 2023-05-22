@@ -1,0 +1,32 @@
+/* This is my firefox userChrome.css file. */
+
+/* This rule ensures that the items in the Places Toolbar are displayed in a row (flex) 
+   and are centered within their container */
+#PlacesToolbarItems {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+/* This rule hides the tab bar */
+#tabbrowser-tabs {
+  visibility: collapse !important;
+}
+
+/* This rule ensures that the "new tab" button in the tabs toolbar, 
+   and the "close" button on each tab, are always visible */
+#TabsToolbar .tabs-newtab-button,
+.tabbrowser-tab .tab-close-button {
+  visibility: visible !important;
+}
+
+/* This rule hides the icon image of each tab */
+.tabbrowser-tab .tab-icon-image {
+  display: none !important;
+}
+
+/* This rule hides the sidebar header for the Tree Style Tab sidebar action 
+   (if the sidebar action is enabled) */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]
+  #sidebar-header {
+  display: none;
+}
